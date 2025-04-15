@@ -11,7 +11,9 @@ async function getWeatherData(city) {
             days: []
         }
 
-        for (let i of data.days) {
+        // console.log(data.days.slice(0, 7))
+
+        for (let i of data.days.slice(0, 7)) {
             const day = {
                 date: i.datetime,
                 conditions: i.conditions,
