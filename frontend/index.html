@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script type="module" src="./scripts/scripts.js"></script>
 </head>
 <body>
-
-    <section class="daysWeatherInfo">
+    <main>
+        <form action="/form" id="cityForm" method="get">
+            <input type="text" name="cityInput" class="cityInput" placeholder="Escribe una ciudad...">
+            <button type="submit" class="cityButton">Buscar</button>
+        </form>
+        <div class="daysWeatherInfo">
+        </div>
         
-    </section>
-    
-    <script type="module" src="./scripts/scripts.js"></script>
+    </main>
 </body>
 </html>
