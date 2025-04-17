@@ -30,3 +30,4 @@ export async function getWeatherData(city) {
         console.log(`Error: ${error}`)
     }
 }
+
