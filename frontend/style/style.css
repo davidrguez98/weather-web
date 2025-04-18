@@ -1,15 +1,15 @@
 @import url(./root.css);
 
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 768px) {
-
-    * {
-        font-family: "Roboto", sans-serif;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-    }
 
     .nav {
         display: flex;
@@ -37,10 +37,14 @@
                 width: 90%;
                 border: none;
                 border-radius: 8px;
-                border-right: 0.5px solid rgb(224, 219, 219);
-                margin: 0.3rem;
-                
+                padding: 0.2rem;
             }
+
+            input:focus {
+                outline: none;
+                border: none;
+                box-shadow: none;
+              }
 
             button {
                 width: 10%;
@@ -50,17 +54,13 @@
 
             }
         }
-    }
-    
-    
-    main {
-        background-color: blue;
-    }    
+    } 
     
     footer {
         background-color: var(--color-footer);
         display: flex;
         flex-direction: column;
+        justify-content: end;
         width: 100%;
         padding: 1rem 0.7rem;
         margin: 0 auto;
@@ -93,10 +93,90 @@
     }
 }
     
-@media (min-width: 769px) and (max-width: 1023px) {
-    
-}
+@media (min-width: 769px)  {
 
-@media (min-width: 1024) {
+    .nav {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-details);
+        height: 5rem;
+        padding: 0 1rem;
+        gap: 8rem;
+        
+        img {
+            width: 20%;
+            max-width: 8rem;
+            height: auto;
+        }
+
+        form {
+            display: flex;
+            width: 60%;
+            max-width: 20rem;
+            height: 2rem;
+            border: 1px solid #f9f9f9;
+            border-radius: 8px;
+            background-color: var(--color-background);
+
+            input {
+                background-color: transparent;
+                width: 90%;
+                border: none;
+                border-radius: 8px;
+                padding: 0.2rem;
+            }
+
+            input:focus {
+                outline: none;
+                border: none;
+                box-shadow: none;
+              }
+
+            button {
+                width: 10%;
+                background-color: var(--color-background);
+                border: none;
+                border-radius: 8px;
+
+            }
+        }
+    } 
     
+    footer {
+        background-color: var(--color-footer);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 100%;
+        padding: 1rem 0.7rem;
+        margin: 0 auto;
+        
+        
+        .footer-tittle {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 1rem;
+            font-size: var(--text-biggerNormal);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            font-size: var(--text-tiny);
+            gap: 1rem;
+
+            .footer-links-email {
+                font-size: var(--text-tiny);
+            }
+        }
+
+        .footer-desgined {
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            font-size: var(--text-extratiny);
+        }
+    }
 }

@@ -6,11 +6,12 @@ document.addEventListener("DOMContentLoaded",  function() {
         const cityInput = document.querySelector(".cityInput")
         const cityButton = document.querySelector(".cityButton")
         
-        cityButton.addEventListener("Click", async () => {
+        cityButton.addEventListener("click", async (event) => {
 
-            
-            
-            const values = await getWeatherData(cityInput)
+            event.preventDefault()
+
+            const city = cityInput.value.trim()
+            const values = await getWeatherData(city)
             
             document.querySelector(".daysWeatherInfo").innerHTML += `
             <div class=daysWeatherInfo-dayZero>
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded",  function() {
                 <p>${values.days[0].humidity}</p>
                 <p>${values.days[0].sunrise}</p>
                 <p>${values.days[0].sunset}</p>
-                <img src="./assets/icons/${values.days[0].icon}.png" width="200px" alt="">
+                <img src="./assets/icons/${values.days[0].icon}.png" alt="weather's icon">
             </div>
             `
         })
