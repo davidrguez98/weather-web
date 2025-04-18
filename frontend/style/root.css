@@ -2,18 +2,17 @@
     
     /* =========== COLORS =========== */
 
-    --color-backgroundWeb: #E5E7EB;
     --color-background: #F9FAFB;
-    --color-mainText: #111827;
-    --color-description: #6B7280;
-    --color-button: #3B82F6;
-    --color-complete: #10B981;
+    --color-text: #000000;
+    --color-details: #57b5f3;
+    --color-footer: #f5f2ee;
 
     /* =========== TEXTS SIZES =========== */
 
-    --text-tiny: 0.9rem;
+    --text-extratiny: 0.6rem;
+    --text-tiny: 0.8rem;
     --text-normal: 1rem;
-    --text-task: 1.2rem;
+    --text-biggerNormal: 1.1rem;
     --text-title: 2.5rem;
 
     /* =========== FONT SIZES =========== */
