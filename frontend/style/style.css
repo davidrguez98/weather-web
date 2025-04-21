@@ -29,7 +29,7 @@ html, body {
         padding: 0 1rem;
         gap: 1rem;
         
-        img {
+        a {
             width: 30%;
             height: auto;
         }
@@ -156,7 +156,7 @@ html, body {
         padding: 0 1rem;
         gap: 8rem;
         
-        img {
+        a {
             width: 20%;
             max-width: 8rem;
             height: auto;
